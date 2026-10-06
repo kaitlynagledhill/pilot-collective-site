@@ -1,3 +1,7 @@
+// content/work.ts
+// Powers /work and /work/[slug] — the full case-study library.
+// This is the source of truth for project details, sector, and media.
+
 export type WorkItem = {
   title: string;
   category: string;
@@ -23,6 +27,7 @@ export type WorkItem = {
   imageHeight?: number;
   client?: string;
   website?: string;
+    sector?: "nonprofit" | "brand";
 };
 
 export const workItems: WorkItem[] = [
@@ -68,6 +73,7 @@ export const workItems: WorkItem[] = [
           "Olympic Champion Jordan Chiles  · Meals on Wheels America Ambassador",
       },
     ],
+    sector: "nonprofit",
   },
   {
     title: "Zion Forever Project",
@@ -96,6 +102,7 @@ export const workItems: WorkItem[] = [
         title: "Ty Burrell · Zion Forever Spotlight",
       },
     ],
+    sector: "nonprofit",
   },
   {
     title: "Climate Podcast",
@@ -124,6 +131,7 @@ export const workItems: WorkItem[] = [
         title: "A Fighting Chance · Teaser",
       },
     ],
+    sector: "nonprofit",
   },
   {
     title: "Path of Liberty",
@@ -185,6 +193,8 @@ export const workItems: WorkItem[] = [
       },
     ],
     website: "https://pathoflibertynyc.com/",
+    sector: "nonprofit",
+      award: "Bronze · 5th Annual Anthem Awards · Special Projects",
   },
   {
     title: "EMERGE125",
@@ -207,6 +217,7 @@ export const workItems: WorkItem[] = [
     imageBg: "#ffffff",
     client: "EMERGE125",
     website: "https://emerge125.org/",
+    sector: "nonprofit",
   },
   {
     title: "The Soloviev Foundation",
@@ -237,6 +248,7 @@ export const workItems: WorkItem[] = [
         imageFit: "contain",
       },
     ],
+    sector: "nonprofit",
   },
   {
     title: "Los Angeles Clippers",
@@ -265,6 +277,7 @@ export const workItems: WorkItem[] = [
         title: "ClipperVision · Preview",
       },
     ],
+    sector: "brand",
   },
   {
     title: "American Immigration Council",
@@ -281,6 +294,7 @@ export const workItems: WorkItem[] = [
     body: [
       "The American Immigration Council is a nonprofit organization working across research, legal advocacy, communications, and community engagement to shape how immigration is understood and addressed in the United States. Its work includes bringing research and stories into the public conversation, supporting immigrants and their advocates, and developing initiatives that connect people and communities around immigration.",
     ],
+    sector: "nonprofit",
   },
   {
     title: "American Public Media",
@@ -301,6 +315,7 @@ export const workItems: WorkItem[] = [
     scale: 0.85,
     imageBg: "#ffffff",
     client: "American Public Media",
+    sector: "brand",
   },
   {
     title: "Keep The Meter Running",
@@ -318,6 +333,7 @@ export const workItems: WorkItem[] = [
       "Pilot Collective provided production support and on-camera talent for the “Irish John” episode of Keep The Meter Running, featuring John McDonagh, a New York City cabbie and playwright. The viral episode captured millions of views across social feeds.",
     ],
     website: "https://www.instagram.com/ktmr/",
+    sector: "brand",
   },
   {
     title: "National Comedy Center x CNN",
@@ -339,6 +355,7 @@ export const workItems: WorkItem[] = [
       "Pilot worked directly alongside CNN and National Comedy Center leadership to source, curate, and secure iconic comedy media and archival content. The team managed content licensing, asset acquisition, and rights clearance to help build permanent, interactive digital exhibits for the museum's core collection.",
     ],
     website: "https://comedycenter.org/",
+    sector: "brand",
   },
   {
     title: "Bachelors Abroad",
@@ -377,6 +394,7 @@ export const workItems: WorkItem[] = [
       "The resulting stories were presented at City Lore Gallery in New York City, bringing together personal experiences and reflections on how the pandemic changed our lives, relationships, creativity, and sense of community.",
     ],
     website: "https://www.instagram.com/reflections_2020/",
+    sector: "nonprofit",
   },
   {
     title: "Hi Anxiety",
@@ -406,6 +424,7 @@ export const workItems: WorkItem[] = [
         title: "Hi Anxiety · Awkwafina",
       },
     ],
+    sector: "nonprofit",
   },
   {
     title: "CBS",
@@ -426,6 +445,7 @@ export const workItems: WorkItem[] = [
     scale: 0.8,
     imageBg: "#ffffff",
     client: "CBS",
+    sector: "brand",
   },
   {
     title: "Dangerous World of Comedy",
@@ -447,6 +467,7 @@ export const workItems: WorkItem[] = [
       "Pilot delivered high-level talent, research, and strategy to support the docuseries, helping distill complex global field footage into a polished, high-impact narrative for a global streaming audience.",
     ],
     website: "https://www.netflix.com/title/80188051",
+    sector: "brand",
   },
   {
     title: "What a Mother!",
