@@ -5,14 +5,14 @@ export default function ConsultationsPage() {
   return (
     <main className="bg-background text-foreground">
       {/* HERO */}
-      <section className="px-[7vw] pt-[11vw] pb-[10vw] md:pt-[9vw] md:pb-[8vw]">
-        <h1 className="font-serif text-[clamp(52px,7.5vw,108px)] leading-[0.96] tracking-[-0.04em] max-w-[1000px]">
+      <section className="px-[7vw] pt-[11vw] pb-[10vw] md:pt-[9vw] md:pb-[8vw] max-[800px]:px-[6vw] max-[800px]:pt-[20vw] max-[800px]:pb-[14vw]">
+        <h1 className="font-serif text-[clamp(52px,7.5vw,108px)] max-[800px]:text-[clamp(46px,12vw,60px)] leading-[0.96] tracking-[-0.04em] max-w-[1000px]">
           Industry
           <br />
           consultations.
         </h1>
 
-        <p className="mt-8 max-w-[720px] text-[20px] leading-[1.5] text-foreground/70">
+        <p className="mt-8 max-w-[720px] text-[20px] max-[800px]:text-[17px] leading-[1.5] text-foreground/70">
           One hour private consultations for individuals looking to better
           understand the entertainment, media, and talent partnership landscape.
         </p>
@@ -26,16 +26,19 @@ export default function ConsultationsPage() {
       </section>
 
       {/* INTRO */}
-      <section className="bg-foreground text-background px-[7vw] py-[5vw] md:py-[6vw]">
+      <section className="bg-foreground text-background px-[7vw] py-[5vw] md:py-[6vw] max-[800px]:px-[6vw] max-[800px]:py-[16vw]">
         <div className="max-w-[1000px] mx-auto text-center">
-          <p className="font-serif text-[clamp(32px,3.5vw,50px)] leading-[1.12] tracking-[-0.025em]">
-            Practical guidance. Real-world perspective. <br></br>A conversation
-            tailored to your goals.
+          <p className="font-serif text-[clamp(32px,3.5vw,50px)] max-[800px]:text-[clamp(30px,8.5vw,40px)] leading-[1.12] tracking-[-0.025em]">
+            Practical guidance. Real-world perspective.
+            <br className="max-[800px]:hidden" />
+            <span className="max-[800px]:block">
+              A conversation tailored to your goals.
+            </span>
           </p>
         </div>
 
-        <div className="mt-10 max-w-[780px] mx-auto text-left">
-          <p className="font-sans text-[17px] leading-[1.8] text-background/70">
+        <div className="mt-10 max-[800px]:mt-8 max-w-[780px] mx-auto text-left">
+          <p className="font-sans text-[17px] max-[800px]:text-[15px] leading-[1.8] text-background/70">
             Whether you are looking to break into the industry, pitch yourself
             or a project, refine your personal brand, or gain insight from
             professionals actively working in television, talent relations, and
@@ -43,7 +46,7 @@ export default function ConsultationsPage() {
             real world perspective.
           </p>
 
-          <p className="font-sans mt-5 text-[17px] leading-[1.8] text-background/70">
+          <p className="font-sans mt-5 max-[800px]:mt-5 text-[17px] max-[800px]:text-[15px] leading-[1.8] text-background/70">
             Each consultation is interactive and tailored to your goals. Topics
             may include navigating the casting process, positioning yourself for
             media opportunities, developing and pitching ideas, auditing your
@@ -54,16 +57,16 @@ export default function ConsultationsPage() {
         </div>
       </section>
 
-      {/* WHO IT'S FOR + WHAT YOU CAN GAIN — merged */}
-      <section className="bg-sand text-background px-[7vw] py-[6vw]">
-        <h2 className="font-serif text-[clamp(42px,5.5vw,76px)] leading-[1.02] tracking-[-0.04em] max-w-[1100px] mb-[6vw]">
+      {/* WHO IT'S FOR + WHAT YOU CAN GAIN */}
+      <section className="bg-sand text-background px-[7vw] py-[6vw] max-[800px]:px-[6vw] max-[800px]:py-[18vw]">
+        <h2 className="font-serif text-[clamp(42px,5.5vw,76px)] max-[800px]:text-[clamp(40px,10.5vw,54px)] leading-[1.02] tracking-[-0.04em] max-w-[1100px] mb-[6vw] max-[800px]:mb-10">
           Who it&apos;s for, and what you&apos;ll gain.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
           {/* LEFT: Who it's for */}
           <div>
-            <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-background/70 mb-8">
+            <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-background/70 mb-8 max-[800px]:mb-5">
               Who these consultations are for
             </p>
 
@@ -78,7 +81,7 @@ export default function ConsultationsPage() {
               ].map((item, i) => (
                 <li
                   key={i}
-                  className="py-6 border-b border-background/15 font-serif text-lg leading-[1.4]"
+                  className="py-6 max-[800px]:py-5 border-b border-background/15 font-serif text-lg max-[800px]:text-[17px] leading-[1.4]"
                 >
                   {item}
                 </li>
@@ -88,7 +91,7 @@ export default function ConsultationsPage() {
 
           {/* RIGHT: What you can gain */}
           <div>
-            <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-background/70 mb-8">
+            <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-background/70 mb-8 max-[800px]:mb-5">
               What you can gain
             </p>
 
@@ -105,7 +108,7 @@ export default function ConsultationsPage() {
               ].map((item, i) => (
                 <li
                   key={i}
-                  className="py-5 border-b border-background/15 font-serif text-lg leading-[1.4]"
+                  className="py-5 max-[800px]:py-5 border-b border-background/15 font-serif text-lg max-[800px]:text-[17px] leading-[1.4]"
                 >
                   {item}
                 </li>
@@ -116,21 +119,20 @@ export default function ConsultationsPage() {
       </section>
 
       {/* BOOKING CTA */}
-      <section className="bg-foreground text-background px-[7vw] pt-[7vw] pb-[10.5vw] text-center">
-        {" "}
+      <section className="bg-foreground text-background px-[7vw] pt-[7vw] pb-[10.5vw] max-[800px]:px-[6vw] max-[800px]:pt-[16vw] max-[800px]:pb-[20vw] text-center">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="font-serif text-[clamp(40px,5vw,72px)] leading-[1.05] tracking-[-0.035em]">
+          <h2 className="font-serif text-[clamp(40px,5vw,72px)] max-[800px]:text-[clamp(38px,10vw,52px)] leading-[1.05] tracking-[-0.035em]">
             Ready to start the conversation?
           </h2>
 
-          <p className="mt-8 max-w-[700px] mx-auto text-[17px] leading-[1.7] text-background/70">
+          <p className="mt-8 max-[800px]:mt-6 max-w-[700px] mx-auto text-[17px] max-[800px]:text-[15px] leading-[1.7] text-background/70">
             One hour consultations are conducted virtually and scheduled based
             on availability.
           </p>
 
           <a
             href="mailto:jessica@pilot-collective.com"
-            className="inline-block mt-8 font-serif text-[clamp(24px,3vw,40px)] tracking-[-0.02em] hover:text-accent transition-colors"
+            className="inline-block mt-8 max-[800px]:mt-7 font-serif text-[clamp(24px,3vw,40px)] max-[800px]:text-[clamp(21px,6vw,28px)] tracking-[-0.02em] break-all hover:text-accent transition-colors"
           >
             jessica@pilot-collective.com
           </a>

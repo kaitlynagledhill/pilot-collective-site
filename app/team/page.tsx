@@ -1,3 +1,5 @@
+import ProtectedImage from "@/components/ProtectedImage";
+
 const jessicaBio = [
   "Jessica Pilot is a creative leader, producer, and communications strategist with more than 15 years of experience shaping storytelling across media, entertainment, and nonprofit sectors. Recognized as a tastemaker by CNN and IndieWire, she brings a sharp eye for talent, cultural relevance, and building platforms that connect with national audiences.",
 
@@ -32,25 +34,28 @@ export default function TeamPage() {
   return (
     <main className="bg-background text-foreground">
       {/* PAGE INTRO */}
-      <section className="px-[7vw] pt-[11vw] pb-[5vw] md:pt-[9vw] md:pb-[4vw]">
-        <h1 className="font-serif text-[clamp(52px,7.5vw,108px)] leading-[0.96] tracking-[-0.04em] max-w-[1000px]">
+      <section className="px-[7vw] pt-[11vw] pb-[5vw] md:pt-[9vw] md:pb-[4vw] max-[800px]:px-[6vw] max-[800px]:pt-[20vw] max-[800px]:pb-[10vw]">
+        <h1 className="font-serif text-[clamp(52px,7.5vw,108px)] max-[800px]:text-[clamp(46px,12vw,60px)] leading-[0.96] tracking-[-0.04em] max-w-[1000px]">
           The people behind
           <br />
           the work.
         </h1>
 
-        <p className="mt-7 max-w-[700px] text-[clamp(18px,1.5vw,23px)] leading-[1.5] tracking-[-0.01em] text-foreground/70">
+        <p className="mt-7 max-w-[700px] text-[clamp(18px,1.5vw,23px)] max-[800px]:text-[18px] leading-[1.5] tracking-[-0.01em] text-foreground/70">
           A collective of creative thinkers, talent experts, and storytellers,
           bringing people and ideas together to move culture forward.
         </p>
       </section>
+
       {/* JESSICA — FOUNDER */}
-      <section className="px-[7vw] pb-[12vw]">
+      <section className="px-[7vw] pb-[12vw] max-[800px]:px-[6vw] max-[800px]:pb-[18vw]">
         <div className="grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-[7vw] items-center">
           <div>
-            <img
+            <ProtectedImage
               src="/images/team/jessica.png"
               alt="Jessica Pilot"
+              width={800}
+              height={1000}
               className="w-full aspect-[4/5] object-cover"
             />
           </div>
@@ -60,7 +65,7 @@ export default function TeamPage() {
               Founder & CEO
             </p>
 
-            <h2 className="font-serif text-[clamp(40px,5vw,68px)] leading-[1.05] tracking-[-0.035em] mb-8">
+            <h2 className="font-serif text-[clamp(40px,5vw,68px)] max-[800px]:text-[clamp(38px,10.5vw,52px)] leading-[1.05] tracking-[-0.035em] mb-8 max-[800px]:mb-6">
               Jessica Pilot
             </h2>
 
@@ -68,56 +73,6 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
-
-      {/*
-<section className="bg-foreground text-background px-[7vw] py-[10vw]">
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-[5vw]">
-
-      <div id="melissa">
-  <img
-    src="/images/team/melissa.png"
-    alt="Melissa Kellner"
-    className="w-full aspect-[4/5] object-cover mb-7"
-  />
-
-<p className="text-[9px] tracking-[0.17em] uppercase text-accent mb-4">
-  Talent Partnerships
-</p>
-
-  <h3 className="font-serif text-[clamp(32px,3.5vw,48px)] leading-[1.1] tracking-[-0.03em] mb-6">
-    Melissa Kellner
-  </h3>
-
-  <div className="space-y-5 text-[14px] leading-[1.8] text-background/80">
-    {melissaBio.map((paragraph, index) => (
-      <p key={index}>{paragraph}</p>
-    ))}
-  </div>
-</div>
-
-<div>
-  <div className="w-full aspect-[4/5] bg-background/10 flex items-center justify-center mb-7">
-    <p className="text-[9px] tracking-[0.17em] uppercase text-background/50">
-      Photo coming soon
-    </p>
-  </div>
-
-  <p className="text-[9px] tracking-[0.17em] uppercase text-accent mb-4">
-    Team Member
-  </p>
-
-  <h3 className="font-serif text-[clamp(32px,3.5vw,48px)] leading-[1.1] tracking-[-0.03em] mb-6">
-    Kristen Hayford
-  </h3>
-
-  <p className="text-[14px] leading-[1.8] text-background/70">
-    Bio coming soon.
-  </p>
-</div>
-</div>
-      </section>
-*/}
     </main>
   );
 }
