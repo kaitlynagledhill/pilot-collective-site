@@ -9,12 +9,13 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-sand: #d9c7b4;
-  --color-accent: #c1652f;
-  --color-accent-hover: #a8562a;
+--color-accent: #F15922;
+--color-accent-hover: #d94d1a;
+--color-accent-deep: #8a3d1f;
   --color-muted: #bdb3a7;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-serif: Georgia, serif;
+--font-sans: var(--font-sans);
+--font-serif: var(--font-display);  
+--font-mono: var(--font-geist-mono);
 }
 
 body {

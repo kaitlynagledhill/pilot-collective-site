@@ -1,6 +1,9 @@
 import Hero from "@/components/Hero";
 import Story from "@/components/Story";
 import WorkGrid from "@/components/WorkGrid";
+import Quote from "@/components/Quote";
+import ClientLogos from "@/components/ClientLogos";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -8,6 +11,9 @@ export default function Home() {
       <Hero />
       <Story />
       <WorkGrid />
+      <Quote />
+      <ClientLogos />
+      <Contact />
     </main>
   );
 }

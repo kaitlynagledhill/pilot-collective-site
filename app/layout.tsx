@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -15,13 +17,25 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Pilot Collective",
-  description: "Pilot Collective is a boutique agency that specializes in intuitive talent partnerships rooted in the belief that the most powerful brand stories are told by people.",
+  description:
+    "Pilot Collective is a boutique agency that specializes in intuitive talent partnerships rooted in the belief that the most powerful brand stories are told by people.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
+    >
+      <body className="min-h-screen flex flex-col">
+        <Nav />
+
+        <main className="flex-1">
+          {children}
+        </main>
+
+        <Footer />
+      </body>
     </html>
   );
 }
