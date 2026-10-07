@@ -29,7 +29,7 @@ export type WorkItem = {
   imageHeight?: number;
   client?: string;
   website?: string;
-    sector?: "nonprofit" | "brand";
+  sector?: "nonprofit" | "brand";
 };
 
 export const workItems: WorkItem[] = [
@@ -55,22 +55,22 @@ export const workItems: WorkItem[] = [
     media: [
       {
         type: "video",
-src: videoUrl("video-1.mp4"),
+        src: videoUrl("video-1.mp4"),
         title: "Meals on Wheels Celebrity Support Sizzle",
       },
       {
         type: "video",
-src: videoUrl("video-5.mp4"),
+        src: videoUrl("video-5.mp4"),
         title: "Hall of Fame Jerry Rice · Meals on Wheels America Ambassador",
       },
       {
         type: "video",
-src: videoUrl("video-3.mp4"),
+        src: videoUrl("video-3.mp4"),
         title: "Tiffani Thiessen · Meals on Wheels America Ambassador",
       },
       {
         type: "video",
-src: videoUrl("video-6.mp4"),
+        src: videoUrl("video-6.mp4"),
         title:
           "Olympic Champion Jordan Chiles  · Meals on Wheels America Ambassador",
       },
@@ -100,15 +100,15 @@ src: videoUrl("video-6.mp4"),
     media: [
       {
         type: "video",
-src: videoUrl("zion-forever-video-1.mp4"),
+        src: videoUrl("zion-forever-video-1.mp4"),
         title: "Ty Burrell · Zion Forever Spotlight",
       },
     ],
     sector: "nonprofit",
   },
   {
-    title: "Climate Podcast",
-    category: "Climate · Media · Strategy",
+    title: "A Fighting Chance",
+    category: "Media · Strategy · Climate",
     role: "Visual Branding · Video Post-Production · Digital Strategy",
     summary:
       "Visual branding, video post-production, and digital strategy for a climate-focused video podcast.",
@@ -175,28 +175,28 @@ src: videoUrl("zion-forever-video-1.mp4"),
       },
       {
         type: "video",
-src: videoUrl("POL-video-1.mp4"),
+        src: videoUrl("POL-video-1.mp4"),
         title: "Path of Liberty · Participant Interviews",
       },
       {
         type: "video",
-src: videoUrl("POL-video-2.mp4"),
+        src: videoUrl("POL-video-2.mp4"),
         title: "Amos Paul Kennedy, Jr. · Artist & Printer",
       },
       {
         type: "video",
-src: videoUrl("POL-video-3.mp4"),
+        src: videoUrl("POL-video-3.mp4"),
         title: "Kelkiyana Yazzie · Grand Canyon National Park Ranger",
       },
       {
         type: "video",
-src: videoUrl("POL-video-4.mp4"),
+        src: videoUrl("POL-video-4.mp4"),
         title: "Jose Alfaro · Community Justice Action Fund",
       },
     ],
     website: "https://pathoflibertynyc.com/",
     sector: "nonprofit",
-      award: "Bronze, The Anthem Awards — Special Projects",
+    award: "Bronze, The Anthem Awards — Special Projects",
   },
   {
     title: "EMERGE125",
@@ -224,9 +224,9 @@ src: videoUrl("POL-video-4.mp4"),
   {
     title: "The Soloviev Foundation",
     category: "Philanthropy · Culture · Sustainability",
-    role: "Guest Booking · Talent Partnerships",
+    role: "Talent Partnerships",
     summary:
-      "Guest booking and talent partnerships for Sustainability, Inc., a podcast exploring global sustainability and climate impact solutions.",
+      "Talent partnerships supporting the Foundation's philanthropic, cultural, and environmental initiatives.",
     size: "medium",
     image: "/images/clients/soloviev-foundation.webp",
     imageWidth: 1912,
@@ -234,14 +234,37 @@ src: videoUrl("POL-video-4.mp4"),
     slug: "soloviev-foundation",
     body: [
       "The Soloviev Foundation is the philanthropic arm of the Soloviev Group, supporting organizations and initiatives across humanitarian, environmental, educational, and cultural causes. The Foundation also maintains an art collection and public gallery in New York City, creating opportunities for audiences to engage with art, history, and cultural programming.",
-      "Pilot Collective collaborated with FORTUNE Brand Studio to lead guest booking and talent partnerships for Sustainability, Inc., a podcast produced in partnership with Boston Consulting Group. By sourcing and securing high-profile innovators, industry leaders, and climate experts, we curated compelling conversations around global sustainability, bringing essential climate impact solutions to business audiences nationwide.",
+      "Pilot Collective partners with the Foundation to support its broader philanthropic and cultural initiatives through strategic talent partnerships.",
     ],
     imageFit: "contain",
     scale: 0.85,
     imageBg: "#ffffff",
+    client: "The Soloviev Foundation",
+    sector: "nonprofit",
+    website: "https://solovievfoundation.org/",
+  },
+  {
+    title: "Sustainability, Inc.",
+    category: "Climate · Media · Sustainability",
+    role: "Guest Booking · Talent Partnerships",
+    summary:
+      "Guest booking and talent partnerships for Sustainability, Inc., a FORTUNE Brand Studio podcast produced in partnership with Boston Consulting Group.",
+    size: "medium",
+    scale: 1.3,
+    image: "/images/clients/fortune-brand-studio.jpg",
+    imageWidth: 1277,
+    imageHeight: 541,
+    slug: "sustainability-inc",
+    body: [
+      "Sustainability, Inc. is a podcast from FORTUNE Brand Studio produced in partnership with Boston Consulting Group, exploring global sustainability and climate impact solutions.",
+      "Pilot Collective collaborated with FORTUNE Brand Studio to lead guest booking and talent partnerships for the series. By sourcing and securing high-profile innovators, industry leaders, and climate experts, we curated compelling conversations around global sustainability and brought essential climate impact solutions to business audiences nationwide.",
+    ],
+    imageFit: "contain",
+    imageBg: "#ffffff",
     client: "FORTUNE Brand Studio",
     website:
       "https://brand-studio.fortune.com/bcg/sustainability-inc/?prx_t=2QEHAAAAAAJRcRA",
+    sector: "brand",
     media: [
       {
         type: "image",
@@ -250,7 +273,6 @@ src: videoUrl("POL-video-4.mp4"),
         imageFit: "contain",
       },
     ],
-    sector: "nonprofit",
   },
   {
     title: "Los Angeles Clippers",
@@ -275,11 +297,12 @@ src: videoUrl("POL-video-4.mp4"),
     media: [
       {
         type: "video",
-src: videoUrl("clippers.mp4"),
+        src: videoUrl("clippers.mp4"),
         title: "ClipperVision · Preview",
       },
     ],
     sector: "brand",
+    website: "https://www.nba.com/clippers/",
   },
   {
     title: "American Immigration Council",
@@ -297,6 +320,7 @@ src: videoUrl("clippers.mp4"),
       "The American Immigration Council is a nonprofit organization working across research, legal advocacy, communications, and community engagement to shape how immigration is understood and addressed in the United States. Its work includes bringing research and stories into the public conversation, supporting immigrants and their advocates, and developing initiatives that connect people and communities around immigration.",
     ],
     sector: "nonprofit",
+    website: "https://www.americanimmigrationcouncil.org/",
   },
   {
     title: "American Public Media",
@@ -318,21 +342,22 @@ src: videoUrl("clippers.mp4"),
     imageBg: "#ffffff",
     client: "American Public Media",
     sector: "brand",
+    website: "https://www.americanpublicmedia.org/",
   },
   {
-    title: "Keep The Meter Running",
+    title: "Rahmavision",
     category: "Media · Talent · Production",
     role: "Talent · Production Support",
     summary:
-      "Production support and on-camera talent for the “Irish John” episode of Keep The Meter Running.",
+      "Production support and on-camera talent for Kareem Rahma's Keep The Meter Running series.",
     size: "medium",
     image: "/images/clients/keep-the-meter-running.png",
     imageWidth: 1646,
     imageHeight: 926,
-    slug: "keep-the-meter-running",
-    client: "Keep The Meter Running",
+    slug: "rahmavision",
+    client: "Rahmavision",
     body: [
-      "Pilot Collective provided production support and on-camera talent for the “Irish John” episode of Keep The Meter Running, featuring John McDonagh, a New York City cabbie and playwright. The viral episode captured millions of views across social feeds.",
+      "Pilot Collective provided production support and on-camera talent for Kareem Rahma's Keep The Meter Running, featuring the “Irish John” episode with John McDonagh, a New York City cabbie and playwright. The viral episode captured millions of views across social feeds.",
     ],
     website: "https://www.instagram.com/ktmr/",
     sector: "brand",
@@ -366,7 +391,9 @@ src: videoUrl("clippers.mp4"),
     summary:
       "An original unscripted television concept created by Jessica Pilot for National Geographic.",
     size: "medium",
-    image: "/images/clients/bachelors-abroad1.png",
+    image: "/images/clients/nat-geo1.jpg",
+    imageBg: "#ffffff",
+
     imageWidth: 3420,
     imageHeight: 1760,
     slug: "bachelors-abroad",
@@ -377,6 +404,7 @@ src: videoUrl("clippers.mp4"),
       "Jessica created the concept around the idea of using travel as a catalyst for romance and personal discovery. Rather than placing participants in a traditional dating environment, Bachelors Abroad brought them into the world, allowing destinations, cultural experiences, and the unpredictability of international travel to become part of the story.",
       "As creator, Jessica developed the show's core premise and format for National Geographic, drawing on her background in entertainment, talent, casting, and unscripted storytelling to create a format that combined the emotional appeal of dating television with the sense of adventure and discovery associated with National Geographic.",
     ],
+    website: "https://www.nationalgeographic.com/",
   },
   {
     title: "REFLECTIONS: Processing the Pandemic",
@@ -448,6 +476,7 @@ src: videoUrl("clippers.mp4"),
     imageBg: "#ffffff",
     client: "CBS",
     sector: "brand",
+    website: "https://www.cbs.com/",
   },
   {
     title: "Dangerous World of Comedy",
