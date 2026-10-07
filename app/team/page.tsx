@@ -1,15 +1,43 @@
 import ProtectedImage from "@/components/ProtectedImage";
 
 const jessicaBio = [
-  "Jessica Pilot is a creative leader, producer, and communications strategist with more than 15 years of experience shaping storytelling across media, entertainment, and nonprofit sectors. Recognized as a tastemaker by CNN and IndieWire, she brings a sharp eye for talent, cultural relevance, and building platforms that connect with national audiences.",
+  <>
+    <strong>Jessica Pilot</strong> is a Founder, CEO, and Creative Strategist
+    who builds high-impact platforms, media ecosystems, and cultural campaigns
+    at scale. With more than 15 years of experience operating at the
+    intersection of media, entertainment, and social impact, she architects
+    multi-channel storytelling strategies that drive national engagement and
+    redefine modern narrative. Recognized as a tastemaker by <em>CNN</em> and{" "}
+    <em>IndieWire</em>, Pilot leverages a sharp instinct for talent acquisition,
+    cultural resonance, and brand positioning to connect ideas with mass
+    audiences.
+  </>,
 
-  "As the former lead talent comedy producer for The Late Show with Stephen Colbert (2015–2021), Pilot helped shape the show’s comedy and cultural voice while championing emerging talent. Her work spans campaigns and content initiatives for CBS, Hulu, the LA Clippers, American Public Media, and Meals on Wheels America.",
+  <>
+    As Lead Talent Comedy Producer for{" "}
+    <em>The Late Show with Stephen Colbert</em> (2015–2021), Pilot served as a
+    key creative architect shaping the show’s cultural voice and booking
+    pipeline while championing breakout talent during peak broadcast years. Her
+    work in platform and content architecture includes engineering integrated
+    campaigns, content initiatives, and talent frameworks for premier brands and
+    networks such as CBS, Hulu, the LA Clippers, American Public Media, and
+    Meals on Wheels America. In the audio and digital space, she has scaled
+    podcast initiatives through high-value talent partnerships with Dotdash,
+    Lattice, and Fortune Brand Studio.
+  </>,
 
-  "Pilot has served as Story Producer and creative lead for Path of Liberty, a six-acre public art installation created with C&G Partners exploring what it means to be American. Her podcast and digital work includes talent partnerships with Dotdash, Lattice, Fortune Brand Studio, and the LA Clippers.",
-
-  "She has also secured multi-year funding for national awareness campaigns, including a mental health initiative with Teen Vogue and Pivotal Ventures, and produced special projects for cultural icons including Rick Rubin, Larry Charles and the late Tony Bennett.",
-
-  "Pilot’s work sits at the intersection of storytelling, talent, strategy, and social impact, bringing together the right voices, ideas, and audiences to create work that matters.",
+  <>
+    Beyond broadcast and digital media, Pilot brings storytelling into physical
+    and institutional spaces. She served as Story Producer and Creative Lead for{" "}
+    <em>Path of Liberty</em>, a six-acre public art installation developed with
+    C&G Partners to explore contemporary American identity through spatial
+    design. A pioneer in securing philanthropic capital, she has brokered
+    multi-year institutional alignments for national campaigns, including a
+    major mental health initiative backed by <em>Teen Vogue</em> and Pivotal
+    Ventures. Throughout her career, she has also produced bespoke projects and
+    creative strategies for legendary cultural figures, including Rick Rubin,
+    Larry Charles, and the late Tony Bennett.
+  </>,
 ];
 
 const melissaBio = [
@@ -20,7 +48,7 @@ const melissaBio = [
   "Additional career highlights include being named a 2025 Realscreen Propelle Pitch Accelerator Finalist, serving as a regular guest lecturer for Emerson LA’s Casting Fundamentals course, and proudly holding membership in the Casting Society of America.",
 ];
 
-function BioText({ paragraphs }: { paragraphs: string[] }) {
+function BioText({ paragraphs }: { paragraphs: React.ReactNode[] }) {
   return (
     <div className="space-y-5 text-[14px] leading-[1.8] text-foreground/80">
       {paragraphs.map((paragraph, index) => (
