@@ -40,14 +40,6 @@ const jessicaBio = [
   </>,
 ];
 
-const melissaBio = [
-  "Melissa Kellner known to most as Mel Kel, brings her passion for storytelling and talent discovery to Pilot Collective as part of the Talent Partnerships team. Mel’s career spans a dynamic range of unscripted, new media, branded, and commercial projects, where she has built a reputation for uncovering uncut gems, forging meaningful talent–client relationships, and crafting thoughtful, strategic talent identities. She thrives in ideation — pinpointing the unique core of a person’s brand and giving them a platform to share their most authentic, resonant stories.",
-
-  "Some of Mel’s favorite projects include Peacock’s House of Villains (Seasons 1–3), Meta-branded content casting, Peacock’s True Story with Ed Helms and Randall Park, and Hulu’s Vanderpump Villa Season 2 — for which she earned a 2026 Artios Award nomination for casting.",
-
-  "Additional career highlights include being named a 2025 Realscreen Propelle Pitch Accelerator Finalist, serving as a regular guest lecturer for Emerson LA’s Casting Fundamentals course, and proudly holding membership in the Casting Society of America.",
-];
-
 function BioText({ paragraphs }: { paragraphs: React.ReactNode[] }) {
   return (
     <div className="space-y-5 text-[14px] leading-[1.8] text-foreground/80">
@@ -64,14 +56,13 @@ export default function TeamPage() {
       {/* PAGE INTRO */}
       <section className="px-[7vw] pt-[11vw] pb-[5vw] md:pt-[9vw] md:pb-[4vw] max-[800px]:px-[6vw] max-[800px]:pt-[20vw] max-[800px]:pb-[10vw]">
         <h1 className="font-serif text-[clamp(52px,7.5vw,108px)] max-[800px]:text-[clamp(46px,12vw,60px)] leading-[0.96] tracking-[-0.04em] max-w-[1000px]">
-          The people behind
+          The person behind
           <br />
           the work.
         </h1>
 
-        <p className="mt-7 max-w-[700px] text-[clamp(18px,1.5vw,23px)] max-[800px]:text-[18px] leading-[1.5] tracking-[-0.01em] text-foreground/70">
-          A collective of creative thinkers, talent experts, and storytellers,
-          bringing people and ideas together to move culture forward.
+        <p className="mt-7 max-w-[620px] text-[clamp(18px,1.5vw,23px)] max-[800px]:text-[18px] leading-[1.5] tracking-[-0.01em] text-foreground/70">
+A creative strategist and connector, bringing people, ideas, and opportunities together to move culture forward.
         </p>
       </section>
 

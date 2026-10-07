@@ -107,18 +107,35 @@ export const workItems: WorkItem[] = [
     sector: "nonprofit",
   },
   {
+  title: "Hilarity for Charity",
+  category: "Nonprofit · Advocacy · Talent",
+  role: "Talent Partnerships · Creative Strategy",
+  summary:
+    "Talent partnerships and creative strategy supporting Hilarity for Charity's mission to bring light to Alzheimer's.",
+  size: "medium",
+  image: "/images/clients/hilarity-for-charity.jpg",
+  slug: "hilarity-for-charity",
+  client: "Hilarity for Charity",
+  body: [
+    "Hilarity for Charity is a national nonprofit dedicated to supporting families impacted by Alzheimer's disease while advancing brain health, education, and advocacy.",
+    "Pilot Collective supports Hilarity for Charity through talent partnerships and creative strategy, connecting mission-driven work with voices that can help bring greater awareness and engagement to the cause.",
+  ],
+  website: "https://wearehfc.org/",
+  sector: "nonprofit",
+},
+  {
     title: "A Fighting Chance",
     category: "Media · Strategy · Climate",
     role: "Visual Branding · Video Post-Production · Digital Strategy",
     summary:
       "Visual branding, video post-production, and digital strategy for a climate-focused video podcast.",
     size: "medium",
-    image: "/images/clients/fighting-chance.jpg",
+    image: "/images/clients/norcal-public-media.jpg",
     imageWidth: 1277,
     imageHeight: 541,
     slug: "climate-podcast",
     imageFit: "contain",
-    scale: 1.1,
+    scale: 1.3,
     imageBg: "#ffffff",
     client: "NorCal Public Media",
     body: [
@@ -142,7 +159,7 @@ export const workItems: WorkItem[] = [
     summary:
       "A six-acre public art installation exploring the many perspectives and experiences that shape American identity.",
     size: "large",
-    featured: true,
+    featured: false,
     image: "/images/clients/path-of-liberty.jpg",
     imageWidth: 1024,
     imageHeight: 683,
@@ -281,7 +298,7 @@ export const workItems: WorkItem[] = [
     summary:
       "End-to-end talent production and broadcast strategy supporting ClipperVision and its interactive, multi-stream experience.",
     size: "medium",
-    featured: true,
+    featured: false,
     image: "/images/clients/la-clippers.webp",
     imageWidth: 1024,
     imageHeight: 715,
@@ -304,6 +321,23 @@ export const workItems: WorkItem[] = [
     sector: "brand",
     website: "https://www.nba.com/clippers/",
   },
+  {
+  title: "Netflix",
+  category: "Media · Entertainment · Talent",
+  role: "Talent Strategy · Creative Consulting",
+  summary:
+    "Talent strategy and creative consulting across Netflix's entertainment ecosystem.",
+  size: "medium",
+  image: "/images/clients/netflix.jpg",
+  slug: "netflix",
+  client: "Netflix",
+  body: [
+    "Pilot Collective has partnered with Netflix across entertainment and talent-driven projects, bringing expertise in talent strategy, creative development, and cultural storytelling.",
+    "Through a deep understanding of talent and audience, Pilot helps shape projects that connect distinctive voices with global audiences."
+  ],
+  website: "https://www.netflix.com/",
+  sector: "brand",
+},
   {
     title: "American Immigration Council",
     category: "Nonprofit · Advocacy",
@@ -425,6 +459,7 @@ export const workItems: WorkItem[] = [
     ],
     website: "https://www.instagram.com/reflections_2020/",
     sector: "nonprofit",
+    featured: true,
   },
   {
     title: "Hi Anxiety",

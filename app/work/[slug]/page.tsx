@@ -36,7 +36,7 @@ export default async function WorkDetailPage({
           {item.category}
         </p>
 
-        <h1 className="font-serif text-[clamp(44px,6vw,92px)] max-[800px]:text-[clamp(42px,11vw,58px)] leading-[0.96] tracking-[-0.04em] max-w-[1200px]">
+        <h1 className="font-serif text-[clamp(44px,6vw,92px)] max-[800px]:text-[clamp(42px,11vw,58px)] leading-[0.96] tracking-[-0.04em] max-w-[1300px]">
           {item.title}
         </h1>
       </section>

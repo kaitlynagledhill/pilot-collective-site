@@ -98,7 +98,7 @@ export const clients: Client[] = [
     name: "Netflix",
     featured: true,
     sector: "brand",
-    scale: 2.4,
+    scale: 2.9,
     logo: "/images/clients/netflix.png",
     workSlug: "dangerous-world-of-comedy",
   },

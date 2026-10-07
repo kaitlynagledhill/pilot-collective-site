@@ -42,9 +42,8 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="font-serif text-xl md:text-2xl max-[800px]:text-lg leading-[1.3] max-w-[610px] max-[800px]:max-w-[330px] mt-6 max-[800px]:mt-5">
-              Pilot Collective is a boutique agency that specializes in
-              intuitive talent partnerships rooted in the belief that the most
+            <p className="font-serif text-xl md:text-2xl max-[800px]:text-lg leading-[1.3] max-w-[600px] max-[800px]:max-w-[330px] mt-6 max-[900px]:mt-5">
+              Pilot Collective is a boutique agency that believes the most
               powerful brand stories are told by people.
             </p>
           </div>
