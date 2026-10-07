@@ -1,9 +1,10 @@
 import ProtectedVideo from "@/components/ProtectedVideo";
+import { videoUrl } from "@/videoUrl";
 
 const heroVideos = [
-  "/hero/reel-1-cropped.mp4",
-  "/hero/reel-2-cropped.mp4",
-  "/hero/reel-3-cropped.mp4",
+  videoUrl("hero/reel-1-cropped.mp4"),
+  videoUrl("hero/reel-2-cropped.mp4"),
+  videoUrl("hero/reel-3-cropped.mp4"),
 ];
 
 export default function Hero() {

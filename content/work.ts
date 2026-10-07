@@ -1,3 +1,5 @@
+import { videoUrl } from "@/videoUrl";
+
 // content/work.ts
 // Powers /work and /work/[slug] — the full case-study library.
 // This is the source of truth for project details, sector, and media.
@@ -53,22 +55,22 @@ export const workItems: WorkItem[] = [
     media: [
       {
         type: "video",
-        src: "/images/clients/meals-on-wheels/video-1.mp4",
+src: videoUrl("video-1.mp4"),
         title: "Meals on Wheels Celebrity Support Sizzle",
       },
       {
         type: "video",
-        src: "/images/clients/meals-on-wheels/video-5.mp4",
+src: videoUrl("video-5.mp4"),
         title: "Hall of Fame Jerry Rice · Meals on Wheels America Ambassador",
       },
       {
         type: "video",
-        src: "/images/clients/meals-on-wheels/video-3.mp4",
+src: videoUrl("video-3.mp4"),
         title: "Tiffani Thiessen · Meals on Wheels America Ambassador",
       },
       {
         type: "video",
-        src: "/images/clients/meals-on-wheels/video-6.mp4",
+src: videoUrl("video-6.mp4"),
         title:
           "Olympic Champion Jordan Chiles  · Meals on Wheels America Ambassador",
       },
@@ -98,7 +100,7 @@ export const workItems: WorkItem[] = [
     media: [
       {
         type: "video",
-        src: "/images/clients/zion-forever-video-1.mp4",
+src: videoUrl("zion-forever-video-1.mp4"),
         title: "Ty Burrell · Zion Forever Spotlight",
       },
     ],
@@ -173,28 +175,28 @@ export const workItems: WorkItem[] = [
       },
       {
         type: "video",
-        src: "/images/clients/POL-video-1.mp4",
+src: videoUrl("POL-video-1.mp4"),
         title: "Path of Liberty · Participant Interviews",
       },
       {
         type: "video",
-        src: "/images/clients/POL-video-2.mp4",
+src: videoUrl("POL-video-2.mp4"),
         title: "Amos Paul Kennedy, Jr. · Artist & Printer",
       },
       {
         type: "video",
-        src: "/images/clients/POL-video-3.mp4",
+src: videoUrl("POL-video-3.mp4"),
         title: "Kelkiyana Yazzie · Grand Canyon National Park Ranger",
       },
       {
         type: "video",
-        src: "/images/clients/POL-video-4.mp4",
+src: videoUrl("POL-video-4.mp4"),
         title: "Jose Alfaro · Community Justice Action Fund",
       },
     ],
     website: "https://pathoflibertynyc.com/",
     sector: "nonprofit",
-      award: "Bronze · 5th Annual Anthem Awards · Special Projects",
+      award: "Bronze, The Anthem Awards — Special Projects",
   },
   {
     title: "EMERGE125",
@@ -273,7 +275,7 @@ export const workItems: WorkItem[] = [
     media: [
       {
         type: "video",
-        src: "/images/clients/clippers.mp4",
+src: videoUrl("clippers.mp4"),
         title: "ClipperVision · Preview",
       },
     ],
