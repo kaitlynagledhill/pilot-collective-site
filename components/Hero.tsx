@@ -63,7 +63,7 @@ export default function Hero() {
       {/* BOTTOM BAND */}
       <div className="h-[50px] max-[800px]:h-[50px] bg-background px-[4.5vw] flex items-center">
         <p className="text-[9px] tracking-[0.17em] uppercase text-accent">
-          Talent partnerships · Culture · Impact
+          Talent Partnerships · Culture · Impact
         </p>
       </div>
     </>
