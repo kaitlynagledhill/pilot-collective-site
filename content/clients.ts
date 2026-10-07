@@ -136,6 +136,7 @@ export const clients: Client[] = [
     scale: 1.7,
     featured: true,
     logo: "/images/clients/national-comedy-center.png",
+    workSlug: "national-comedy-center-cnn",
   },
 
     {
