@@ -6,6 +6,7 @@ export type Client = {
   logo?: string;
   featured?: boolean;
   scale?: number;
+mobileScale?: number;
   paid?: boolean;
   sector?: "nonprofit" | "brand";
   workSlug?: string;
@@ -51,6 +52,7 @@ export const clients: Client[] = [
     logo: "/images/clients/emerge-125.webp",
     featured: true,
     scale: 1.75,
+      mobileScale: 1.4,
     sector: "nonprofit",
     workSlug: "emerge125",
   },
@@ -61,6 +63,8 @@ export const clients: Client[] = [
     workSlug: "climate-podcast",
         logo: "/images/clients/norcal-public.webp",
         scale: 3.9,
+          mobileScale: 2.8,
+
 
   },
 
@@ -82,14 +86,15 @@ export const clients: Client[] = [
     sector: "brand",
     workSlug: "los-angeles-clippers",
   },
-  {
-    name: "American Public Media",
-    logo: "/images/clients/american-public-media.webp",
-    featured: true,
-    scale: 1.3,
+ 
+        {
+    name: "Paramount",
     sector: "brand",
-    workSlug: "american-public-media",
-  },  {
+    scale: 1.3,
+    featured: true,
+    logo: "/images/clients/paramount.svg",
+  },
+  {
     name: "Netflix",
     featured: true,
     sector: "brand",
@@ -132,5 +137,17 @@ export const clients: Client[] = [
     featured: true,
     logo: "/images/clients/national-comedy-center.png",
   },
+
+    {
+    name: "American Public Media",
+    logo: "/images/clients/american-public-media.webp",
+    featured: true,
+    scale: 1.3,
+      mobileScale: 1.1,
+
+    sector: "brand",
+    workSlug: "american-public-media",
+  }, 
+
 
 ];

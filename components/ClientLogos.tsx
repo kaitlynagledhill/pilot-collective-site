@@ -12,24 +12,27 @@ export default function ClientLogos() {
   function renderGrid(list: typeof clients) {
     return (
       <div className="grid grid-cols-2 md:grid-cols-3 gap-px border border-white/15 bg-white/15">
-        {list.map((client) => {
-          const tile = (
-            <div className="h-[150px] max-[800px]:h-[105px] bg-[#faf8f3] flex items-center justify-center p-8 max-[800px]:p-5 transition-colors hover:bg-white">
+{list.map((client, index) => {
+const tile = (
+  <div
+    className={`h-[150px] max-[800px]:h-[105px] bg-[#faf8f3] flex items-center justify-center p-8 max-[800px]:p-5 transition-colors hover:bg-white ${
+      index === 9 ? "flex md:hidden" : ""
+    }`}
+  >
               {client.logo ? (
                 <ProtectedImage
                   src={client.logo}
                   alt={client.name}
                   width={170}
                   height={72}
-                  className="max-w-[170px] max-h-[72px] max-[800px]:max-w-[125px] max-[800px]:max-h-[52px] object-contain"
-                  style={{
-                    mixBlendMode: "multiply",
-                    width: "auto",
-                    height: "auto",
-                    transform: client.scale
-                      ? `scale(${client.scale})`
-                      : undefined,
-                  }}
+className="max-w-[170px] max-h-[72px] max-[800px]:max-w-[125px] max-[800px]:max-h-[52px] object-contain scale-[var(--logo-scale)] max-[800px]:scale-[var(--logo-mobile-scale)]"
+style={{
+  mixBlendMode: "multiply",
+  width: "auto",
+  height: "auto",
+  "--logo-scale": client.scale ?? 1,
+  "--logo-mobile-scale": client.mobileScale ?? client.scale ?? 1,
+} as React.CSSProperties}
                   unoptimized
                 />
               ) : (
