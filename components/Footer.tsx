@@ -35,6 +35,15 @@ export default function Footer() {
       >
         info@pilot-collective.com
       </a>
+
+      <a
+        href="https://kaitlyn-gledhill.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden max-[800px]:block justify-self-center text-[7px] tracking-[0.08em] text-foreground/20 hover:text-foreground/40 transition-colors"
+      >
+        Designed &amp; developed by Kaitlyn Gledhill
+      </a>
     </footer>
   );
 }

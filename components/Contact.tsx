@@ -20,8 +20,8 @@ export default function Contact() {
         Start a conversation
       </a>
 
-<div className="mt-[7vw] translate-y-3">
-  <a
+<div className="mt-[7vw] translate-y-3 max-[800px]:hidden">
+    <a
     href="https://kaitlyn-gledhill.com"
     target="_blank"
     rel="noopener noreferrer"
