@@ -40,7 +40,7 @@ export default function Footer() {
         href="https://kaitlyn-gledhill.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="hidden max-[800px]:block justify-self-center text-[7px] tracking-[0.08em] text-foreground/20 hover:text-foreground/40 transition-colors"
+        className="hidden max-[800px]:block justify-self-center translate-y-2 text-[7px] tracking-[0.08em] text-foreground/20 hover:text-foreground/40 transition-colors"
       >
         Designed &amp; developed by Kaitlyn Gledhill
       </a>
