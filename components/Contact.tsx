@@ -2,7 +2,7 @@ export default function Contact() {
   return (
 <section
   id="contact"
-  className="bg-background text-foreground text-center px-[5vw] pt-[5vw] pb-4"
+  className="bg-background text-foreground text-center px-[5vw] pt-[5vw] pb-4 max-[800px]:pb-[22vw]"
 >
       <p className="text-[9px] tracking-[0.17em] uppercase text-accent">
         WHAT'S NEXT
