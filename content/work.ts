@@ -19,6 +19,7 @@ export type WorkItem = {
     src: string;
     title?: string;
     imageFit?: "cover" | "contain";
+    orientation?: "portrait" | "landscape";
   }[];
   imageBg?: string;
   imageFit?: "cover" | "contain";
@@ -120,6 +121,14 @@ export const workItems: WorkItem[] = [
     "Hilarity for Charity is a national nonprofit dedicated to supporting families impacted by Alzheimer's disease while advancing brain health, education, and advocacy.",
     "Pilot Collective supports Hilarity for Charity through talent partnerships and creative strategy, connecting mission-driven work with voices that can help bring greater awareness and engagement to the cause.",
   ],
+  media: [
+  {
+    type: "video",
+    src: videoUrl("hilarity-for-charity.mp4"),
+    orientation: "portrait",
+    title: "Hilarity for Charity · Preview",
+  },
+    ],
   website: "https://wearehfc.org/",
   sector: "nonprofit",
 },
@@ -491,27 +500,23 @@ export const workItems: WorkItem[] = [
     ],
     sector: "nonprofit",
   },
-  {
-    title: "CBS",
-    category: "Media · Broadcast · Comedy",
-    role: "Talent Production · Campaigns",
-    summary:
-      "Talent production and campaign work across CBS programming, including The Late Show with Stephen Colbert.",
-    size: "medium",
-    image: "/images/clients/cbs.webp",
-    imageWidth: 2400,
-    imageHeight: 870,
-    slug: "cbs",
+
+  { title: "The Late Show with Stephen Colbert", 
+    category: "Media · Late Night · Comedy", 
+    role: "Lead Talent Comedy Producer", 
+    summary: "Talent production and comedy initiatives shaping the voice and cultural relevance of late-night television.", 
+    size: "medium", 
+    image: "/images/clients/late-show.jpg", 
+    slug: "late-show-with-stephen-colbert", 
     body: [
-      "CBS is one of America's major television and entertainment networks, spanning scripted and unscripted programming, comedy, late night, news, sports, and other original content.",
-      "Jessica Pilot's work with CBS has included campaigns and content initiatives across the network. From 2015–2021, she served as the Lead Talent Comedy Producer for The Late Show with Stephen Colbert, helping shape the show's comedy and cultural voice while championing emerging talent.",
+      "The Late Show with Stephen Colbert is CBS's flagship late-night talk show, bringing together comedy, celebrity interviews, and cultural commentary.",
+      "From 2015–2021, Jessica Pilot served as Lead Talent Comedy Producer, helping shape the show's comedy and cultural voice while championing emerging talent.",
     ],
-    imageFit: "contain",
-    scale: 0.8,
-    imageBg: "#ffffff",
-    client: "CBS",
-    sector: "brand",
-    website: "https://www.cbs.com/",
+    objectPositionY: "15%",
+    imageBg: "#ffffff", 
+    client: "The Late Show with Stephen Colbert", 
+    sector: "brand", 
+    website: "https://www.cbs.com/", 
   },
   {
     title: "Dangerous World of Comedy",
@@ -556,5 +561,23 @@ export const workItems: WorkItem[] = [
       "Pilot worked with Loki Films on talent booking for the documentary, helping bring together voices that shaped its candid and comedic exploration of modern motherhood.",
     ],
     website: "https://lokifilms.com/",
+  },
+    { 
+    title: "CBS", 
+    category: "Media · Broadcast · Entertainment", 
+    role: "Talent Production · Campaigns", 
+    summary: "Talent production and campaign work supporting programming across the CBS network.", 
+    size: "medium", 
+    image: "/images/clients/cbs.webp", 
+    imageWidth: 2400, 
+    imageHeight: 870, 
+    slug: "cbs", 
+    body: [ "CBS is one of America's leading television networks, spanning entertainment, comedy, news, sports, and original programming.", "Jessica Pilot's work with CBS has included talent production and campaigns across the network, helping bring programming and talent-driven initiatives to life.", ], 
+    imageFit: "contain", 
+    scale: 0.8, 
+    imageBg: "#ffffff", 
+    client: "CBS", 
+    sector: "brand", 
+    website: "https://www.cbs.com/", 
   },
 ];
