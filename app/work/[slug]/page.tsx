@@ -151,7 +151,12 @@ export default async function WorkDetailPage({
               ) : (
                 <div
                   key={i}
-                  className={media.length === 1 ? "md:col-span-2" : ""}
+                  className={
+                    media.length === 1 &&
+                    !(m.type === "video" && m.orientation === "portrait")
+                      ? "md:col-span-2"
+                      : ""
+                  }
                 >
                   {m.title && (
                     <p className="font-serif text-sm text-background mb-3">
