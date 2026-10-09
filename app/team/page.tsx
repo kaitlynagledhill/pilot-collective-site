@@ -15,7 +15,7 @@ const jessicaBio = [
 
   <>
     As Lead Talent Comedy Producer for{" "}
-    <em>The Late Show with Stephen Colbert</em> (2015–2021), Pilot served as a
+    <em>The Late Show with Stephen Colbert</em>, Pilot served as a
     key creative architect shaping the show’s cultural voice and booking
     pipeline while championing breakout talent during peak broadcast years. Her
     work in platform and content architecture includes engineering integrated
