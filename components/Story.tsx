@@ -17,9 +17,10 @@ export default function Story() {
           </h2>
 
           <p className="font-serif text-xl md:text-2xl max-[800px]:text-[19px] leading-[1.45] max-w-[650px] text-background/75 mt-10 max-[800px]:mt-7">
-            We work through authentic relationships and empathy-driven strategy
-            to help mission-driven organizations and consumer brands communicate
-            with purpose and clarity.
+            We create authentic relationships and strategies to help
+            mission-driven organizations and dynamic consumer brands communicate
+            with renewed purpose and clarity that scales revenue and
+            opportunities for growth.
           </p>
         </div>
 
