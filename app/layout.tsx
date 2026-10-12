@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+// Fonts used throughout the site
 const fraunces = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
@@ -15,6 +16,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+// Site title, description, and preview information for sharing links
 export const metadata: Metadata = {
   title: "Pilot Collective",
   description:
@@ -41,6 +43,7 @@ export const metadata: Metadata = {
   },
 };
 
+// Main layout shared by all pages
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -50,9 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-screen flex flex-col">
         <Nav />
 
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
 
         <Footer />
       </body>

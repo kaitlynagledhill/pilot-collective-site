@@ -2,37 +2,43 @@ import ProtectedImage from "@/components/ProtectedImage";
 import Link from "next/link";
 import { clients } from "@/content/clients";
 
+// Displays the client logos grouped by nonprofit and brand
 export default function ClientLogos() {
+  // Gets the featured clients and separates them by sector
   const featuredClients = clients.filter((client) => client.featured);
   const nonprofitClients = featuredClients.filter(
-    (c) => c.sector === "nonprofit"
+    (c) => c.sector === "nonprofit",
   );
   const brandClients = featuredClients.filter((c) => c.sector === "brand");
 
+  // Builds the logo grid for each group of clients
   function renderGrid(list: typeof clients) {
     return (
       <div className="grid grid-cols-2 md:grid-cols-3 gap-px border border-white/15 bg-white/15">
-{list.map((client, index) => {
-const tile = (
-  <div
-    className={`h-[150px] max-[800px]:h-[105px] bg-[#faf8f3] flex items-center justify-center p-8 max-[800px]:p-5 transition-colors hover:bg-white ${
-      index === 9 ? "flex md:hidden" : ""
-    }`}
-  >
+        {list.map((client, index) => {
+          const tile = (
+            <div
+              className={`h-[150px] max-[800px]:h-[105px] bg-[#faf8f3] flex items-center justify-center p-8 max-[800px]:p-5 transition-colors hover:bg-white ${
+                index === 9 ? "flex md:hidden" : ""
+              }`}
+            >
               {client.logo ? (
                 <ProtectedImage
                   src={client.logo}
                   alt={client.name}
                   width={170}
                   height={72}
-className="max-w-[170px] max-h-[72px] max-[800px]:max-w-[125px] max-[800px]:max-h-[52px] object-contain scale-[var(--logo-scale)] max-[800px]:scale-[var(--logo-mobile-scale)]"
-style={{
-  mixBlendMode: "multiply",
-  width: "auto",
-  height: "auto",
-  "--logo-scale": client.scale ?? 1,
-  "--logo-mobile-scale": client.mobileScale ?? client.scale ?? 1,
-} as React.CSSProperties}
+                  className="max-w-[170px] max-h-[72px] max-[800px]:max-w-[125px] max-[800px]:max-h-[52px] object-contain scale-[var(--logo-scale)] max-[800px]:scale-[var(--logo-mobile-scale)]"
+                  style={
+                    {
+                      mixBlendMode: "multiply",
+                      width: "auto",
+                      height: "auto",
+                      "--logo-scale": client.scale ?? 1,
+                      "--logo-mobile-scale":
+                        client.mobileScale ?? client.scale ?? 1,
+                    } as React.CSSProperties
+                  }
                   unoptimized
                 />
               ) : (
@@ -43,6 +49,7 @@ style={{
             </div>
           );
 
+          // Links to the project page when the client has a work page
           return client.workSlug ? (
             <Link
               key={client.name}
@@ -64,6 +71,7 @@ style={{
       id="collective"
       className="px-[5vw] py-[7vw] bg-background text-foreground max-[800px]:px-[6vw] max-[800px]:py-[18vw]"
     >
+      {/* Section heading and client logo groups */}
       <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-accent">
         A few of the worlds we&apos;ve worked across
       </p>

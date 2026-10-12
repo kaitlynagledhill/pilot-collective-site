@@ -1,3 +1,5 @@
+
+// Footer displayed at the bottom of the site
 export default function Footer() {
   return (
     <footer className="bg-[#191817] text-foreground px-[4.5vw] py-6 grid grid-cols-3 items-center text-[9px] tracking-[0.14em] uppercase max-[800px]:grid-cols-1 max-[800px]:gap-4 max-[800px]:py-7">
@@ -5,6 +7,7 @@ export default function Footer() {
         Pilot Collective
       </span>
 
+      {/* Link to the agency's Instagram */}
       <a
         href="https://www.instagram.com/pilot_collective/"
         target="_blank"
@@ -29,6 +32,7 @@ export default function Footer() {
         Instagram
       </a>
 
+      {/* Contact email */}
       <a
         href="mailto:info@pilot-collective.com"
         className="justify-self-end max-[800px]:justify-self-center hover:text-accent transition-colors"
@@ -36,6 +40,7 @@ export default function Footer() {
         info@pilot-collective.com
       </a>
 
+      {/* Design credit shown only on mobile */}
       <a
         href="https://kaitlyn-gledhill.com"
         target="_blank"
