@@ -115,7 +115,7 @@ export const workItems: WorkItem[] = [
     summary:
       "A six-acre public art installation exploring the many perspectives and experiences that shape American identity.",
     size: "large",
-    featured: false,
+    featured: true,
     image: "/images/clients/path-of-liberty.jpg",
     imageWidth: 1024,
     imageHeight: 683,
@@ -543,7 +543,7 @@ export const workItems: WorkItem[] = [
     ],
     website: "https://www.instagram.com/reflections_2020/",
     sector: "nonprofit",
-    featured: true,
+    featured: false,
   },
 
   {
