@@ -1,5 +1,12 @@
 import ProtectedImage from "@/components/ProtectedImage";
 
+import { Lora } from "next/font/google";
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 // Paragraphs used for Jessica's bio
 const jessicaBio = [
   <>
@@ -64,8 +71,8 @@ export default function TeamPage() {
         </h1>
 
         <p className="mt-7 max-w-[620px] text-[clamp(18px,1.5vw,23px)] max-[800px]:text-[18px] leading-[1.5] tracking-[-0.01em] text-foreground/70">
-          A creative strategist, brand builder, and producer, bringing people, ideas, and partnership
-          opportunities together to move culture forward.
+          A creative strategist, brand builder, and producer, bringing people,
+          ideas, and partnership opportunities together to move culture forward.
         </p>
       </section>
 
@@ -88,7 +95,12 @@ export default function TeamPage() {
             </p>
 
             <h2 className="font-serif text-[clamp(40px,5vw,68px)] max-[800px]:text-[clamp(38px,10.5vw,52px)] leading-[1.05] tracking-[-0.035em] mb-8 max-[800px]:mb-6">
-              Jessica Pilot
+              <span
+                className={`${lora.className} inline-block text-[1.08em] scale-x-[1.18] mr-[-0.03em] [font-weight:450]`}
+              >
+                J
+              </span>
+              essica Pilot
             </h2>
 
             {/* Displays Jessica's bio */}
