@@ -64,7 +64,7 @@ export default function TeamPage() {
         </h1>
 
         <p className="mt-7 max-w-[620px] text-[clamp(18px,1.5vw,23px)] max-[800px]:text-[18px] leading-[1.5] tracking-[-0.01em] text-foreground/70">
-          A creative strategist and producer, bringing people, ideas, and
+          A creative strategist, brand builder, and producer, bringing people, ideas, and partnership
           opportunities together to move culture forward.
         </p>
       </section>
