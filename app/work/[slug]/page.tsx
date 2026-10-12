@@ -1,3 +1,4 @@
+
 import ProtectedImage from "@/components/ProtectedImage";
 import ProtectedVideo from "@/components/ProtectedVideo";
 
@@ -5,6 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { workItems } from "@/content/work";
 
+// Creates a page for each project using its slug
 export function generateStaticParams() {
   return workItems.map((item) => ({ slug: item.slug }));
 }
@@ -14,16 +16,21 @@ export default async function WorkDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // Gets the project slug from the URL
   const { slug } = await params;
+
+  // Finds the project that matches the URL
   const item = workItems.find((w) => w.slug === slug);
 
+  // Shows a 404 page if the project doesn't exist
   if (!item) notFound();
 
+  // Gets the project's media, or uses an empty array if there isn't any
   const media = item.media ?? [];
 
   return (
     <main className="bg-background text-foreground">
-      {/* HERO */}
+      {/* Project title and link back to all work */}
       <section className="px-[7vw] pt-[11vw] pb-[5vw] max-[800px]:px-[6vw] max-[800px]:pt-[20vw] max-[800px]:pb-[10vw]">
         <Link
           href="/work"
@@ -41,7 +48,7 @@ export default async function WorkDetailPage({
         </h1>
       </section>
 
-      {/* LEAD IMAGE */}
+      {/* Main project image */}
       {item.image && (
         <section className="px-[7vw] pb-[6vw] max-[800px]:px-[6vw] max-[800px]:pb-[10vw]">
           <div
@@ -69,6 +76,7 @@ export default async function WorkDetailPage({
         </section>
       )}
 
+      {/* Shows an award if the project has one */}
       {item.award && (
         <section className="px-[7vw] pb-[4vw] max-[800px]:px-[6vw] max-[800px]:pb-[8vw]">
           <p className="font-sans text-[10px] tracking-[0.1em] uppercase text-accent">
@@ -77,9 +85,10 @@ export default async function WorkDetailPage({
         </section>
       )}
 
-      {/* BODY + SIDEBAR */}
+      {/* Project description and client information */}
       <section className="px-[7vw] pb-[8vw] max-[800px]:px-[6vw] max-[800px]:pb-[16vw]">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-12 md:gap-20 max-[800px]:gap-12">
+          {/* Displays the project description paragraphs */}
           <div className="max-w-[720px]">
             {(item.body ?? [item.summary]).map((paragraph, i) => (
               <p
@@ -91,6 +100,7 @@ export default async function WorkDetailPage({
             ))}
           </div>
 
+          {/* Shows the client, role, and website in the sidebar */}
           <aside className="border-t border-foreground/15 pt-6 h-fit">
             <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-accent mb-3">
               Client
@@ -104,6 +114,7 @@ export default async function WorkDetailPage({
               {item.role}
             </p>
 
+            {/* Only shows the website link if one is provided */}
             {item.website && (
               <>
                 <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-accent mb-3">
@@ -123,15 +134,17 @@ export default async function WorkDetailPage({
         </div>
       </section>
 
-      {/* MEDIA GALLERY */}
+      {/* Displays the project's images and videos, if available */}
       {media.length > 0 && (
         <section className="bg-sand px-[7vw] py-[7vw] max-[800px]:px-[6vw] max-[800px]:py-[14vw]">
           <p className="font-sans text-[9px] tracking-[0.17em] uppercase text-background/70 mb-8 max-[800px]:mb-6">
             Gallery
           </p>
 
+          {/* Arranges gallery items in a grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-[800px]:gap-6">
             {media.map((m, i) =>
+              // Displays images differently from videos and embedded content
               m.type === "image" ? (
                 <div
                   key={i}
@@ -158,12 +171,14 @@ export default async function WorkDetailPage({
                       : ""
                   }
                 >
+                  {/* Shows a title above the media when one is provided */}
                   {m.title && (
                     <p className="font-serif text-sm text-background mb-3">
                       {m.title}
                     </p>
                   )}
 
+                  {/* Embeds YouTube videos or displays videos hosted on the site */}
                   {m.type === "youtube" ? (
                     <iframe
                       src={m.src}
