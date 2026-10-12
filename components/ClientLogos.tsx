@@ -79,7 +79,9 @@ export default function ClientLogos() {
       <h2 className="font-serif text-[clamp(40px,5vw,80px)] max-[800px]:text-[clamp(40px,11vw,54px)] leading-[0.9] tracking-[-0.02em] mt-6 mb-10 max-[800px]:mt-5 max-[800px]:mb-8">
         Media. Culture.
         <br />
-        Social impact.
+        Social Impact.
+        <br />
+        Partnerships.
       </h2>
 
       {nonprofitClients.length > 0 && (
