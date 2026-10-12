@@ -283,7 +283,7 @@ export default function ConversationPage() {
             >
               <div>
                 <p className="font-sans text-[9px] tracking-[0.15em] uppercase text-background/50 mb-1">
-                  {item.publication} · {item.year}
+                  {item.publication} 
                 </p>
 
                 <h3 className="font-serif text-xl md:text-2xl tracking-[-0.02em] group-hover:text-accent transition-colors">
