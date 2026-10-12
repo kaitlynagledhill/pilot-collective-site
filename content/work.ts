@@ -33,6 +33,7 @@ export type WorkItem = {
   sector?: "nonprofit" | "brand";
 };
 
+// Project information used to display the work portfolio
 export const workItems: WorkItem[] = [
   {
     title: "Meals on Wheels America",
@@ -108,30 +109,30 @@ export const workItems: WorkItem[] = [
     sector: "nonprofit",
   },
   {
-  title: "Hilarity for Charity",
-  category: "Nonprofit · Advocacy · Talent",
-  role: "Talent Partnerships · Creative Strategy",
-  summary:
-    "Talent partnerships and creative strategy supporting Hilarity for Charity's mission to bring light to Alzheimer's.",
-  size: "medium",
-  image: "/images/clients/hilarity-for-charity.jpg",
-  slug: "hilarity-for-charity",
-  client: "Hilarity for Charity",
-  body: [
-    "Hilarity for Charity is a national nonprofit dedicated to supporting families impacted by Alzheimer's disease while advancing brain health, education, and advocacy.",
-    "Pilot Collective supports Hilarity for Charity through talent partnerships and creative strategy, connecting mission-driven work with voices that can help bring greater awareness and engagement to the cause.",
-  ],
-  media: [
-  {
-    type: "video",
-    src: videoUrl("hilarity-for-charity.mp4"),
-    orientation: "portrait",
-    title: "Hilarity for Charity · Preview",
-  },
+    title: "Hilarity for Charity",
+    category: "Nonprofit · Advocacy · Talent",
+    role: "Talent Partnerships · Creative Strategy",
+    summary:
+      "Talent partnerships and creative strategy supporting Hilarity for Charity's mission to bring light to Alzheimer's.",
+    size: "medium",
+    image: "/images/clients/hilarity-for-charity.jpg",
+    slug: "hilarity-for-charity",
+    client: "Hilarity for Charity",
+    body: [
+      "Hilarity for Charity is a national nonprofit dedicated to supporting families impacted by Alzheimer's disease while advancing brain health, education, and advocacy.",
+      "Pilot Collective supports Hilarity for Charity through talent partnerships and creative strategy, connecting mission-driven work with voices that can help bring greater awareness and engagement to the cause.",
     ],
-  website: "https://wearehfc.org/",
-  sector: "nonprofit",
-},
+    media: [
+      {
+        type: "video",
+        src: videoUrl("hilarity-for-charity.mp4"),
+        orientation: "portrait",
+        title: "Hilarity for Charity · Preview",
+      },
+    ],
+    website: "https://wearehfc.org/",
+    sector: "nonprofit",
+  },
   {
     title: "A Fighting Chance",
     category: "Media · Strategy · Climate",
@@ -331,22 +332,22 @@ export const workItems: WorkItem[] = [
     website: "https://www.nba.com/clippers/",
   },
   {
-  title: "Netflix",
-  category: "Media · Entertainment · Talent",
-  role: "Talent Strategy · Creative Consulting",
-  summary:
-    "Talent strategy and creative consulting across Netflix's entertainment ecosystem.",
-  size: "medium",
-  image: "/images/clients/netflix.jpg",
-  slug: "netflix",
-  client: "Netflix",
-  body: [
-    "Pilot Collective has partnered with Netflix across entertainment and talent-driven projects, bringing expertise in talent strategy, creative development, and cultural storytelling.",
-    "Through a deep understanding of talent and audience, Pilot helps shape projects that connect distinctive voices with global audiences."
-  ],
-  website: "https://www.netflix.com/",
-  sector: "brand",
-},
+    title: "Netflix",
+    category: "Media · Entertainment · Talent",
+    role: "Talent Strategy · Creative Consulting",
+    summary:
+      "Talent strategy and creative consulting across Netflix's entertainment ecosystem.",
+    size: "medium",
+    image: "/images/clients/netflix.jpg",
+    slug: "netflix",
+    client: "Netflix",
+    body: [
+      "Pilot Collective has partnered with Netflix across entertainment and talent-driven projects, bringing expertise in talent strategy, creative development, and cultural storytelling.",
+      "Through a deep understanding of talent and audience, Pilot helps shape projects that connect distinctive voices with global audiences.",
+    ],
+    website: "https://www.netflix.com/",
+    sector: "brand",
+  },
   {
     title: "American Immigration Council",
     category: "Nonprofit · Advocacy",
@@ -501,24 +502,25 @@ export const workItems: WorkItem[] = [
     sector: "nonprofit",
   },
 
-
-{ 
-  title: "The Late Show with Stephen Colbert", 
-  category: "Media · Late Night · Comedy", 
-  role: "Lead Talent Comedy Producer", 
-summary: "Discovering rising comedy talent and shaping late-night programming from 2015 to 2021.",  size: "medium", 
-  image: "/images/clients/late-show.jpg", 
-  slug: "late-show-with-stephen-colbert", 
-  body: [
-    "The Late Show with Stephen Colbert is CBS's flagship late-night talk show, bringing together comedy, celebrity interviews, and cultural commentary.",
-    "As Lead Talent Comedy Producer for CBS’s The Late Show with Stephen Colbert from 2015 to 2021, Jessica Pilot helped define the comedy landscape on television’s biggest late-night stage. She spearheaded stand-up bookings and discovered rising talent, cementing the franchise's reputation as a premier platform for next-generation stand-up and cultural commentary."
-  ],
-  objectPositionY: "15%",
-  imageBg: "#ffffff", 
-  client: "The Late Show with Stephen Colbert", 
-  sector: "brand", 
-  website: "https://www.cbs.com/", 
-},
+  {
+    title: "The Late Show with Stephen Colbert",
+    category: "Media · Late Night · Comedy",
+    role: "Lead Talent Comedy Producer",
+    summary:
+      "Discovering rising comedy talent and shaping late-night programming from 2015 to 2021.",
+    size: "medium",
+    image: "/images/clients/late-show.jpg",
+    slug: "late-show-with-stephen-colbert",
+    body: [
+      "The Late Show with Stephen Colbert is CBS's flagship late-night talk show, bringing together comedy, celebrity interviews, and cultural commentary.",
+      "As Lead Talent Comedy Producer for CBS’s The Late Show with Stephen Colbert from 2015 to 2021, Jessica Pilot helped define the comedy landscape on television’s biggest late-night stage. She spearheaded stand-up bookings and discovered rising talent, cementing the franchise's reputation as a premier platform for next-generation stand-up and cultural commentary.",
+    ],
+    objectPositionY: "15%",
+    imageBg: "#ffffff",
+    client: "The Late Show with Stephen Colbert",
+    sector: "brand",
+    website: "https://www.cbs.com/",
+  },
   {
     title: "Dangerous World of Comedy",
     category: "Television · Comedy · Documentary",
@@ -542,28 +544,29 @@ summary: "Discovering rising comedy talent and shaping late-night programming fr
     sector: "brand",
   },
 
-
-{ 
-  title: "CBS", 
-  category: "Media · Broadcast · Entertainment", 
-  role: "Strategic Talent Advisor", 
-summary: "Strategic talent advisory, industry connections, and development across CBS programming.",  size: "medium", 
-  image: "/images/clients/cbs.webp", 
-  imageWidth: 2400, 
-  imageHeight: 870, 
-  slug: "cbs", 
-  body: [ 
-    "CBS is one of America's leading television networks, spanning entertainment, comedy, news, sports, and original programming.", 
-    "Working alongside CBS Studios, Jessica Pilot served as a strategic talent advisor, setting key industry meetings, guiding development, and connecting top-tier talent with the network's leading entertainment and original programming initiatives."
-  ], 
-  imageFit: "contain", 
-  scale: 0.8, 
-  imageBg: "#ffffff", 
-  client: "CBS", 
-  sector: "brand", 
-  website: "https://www.cbs.com/", 
-},
-    {
+  {
+    title: "CBS",
+    category: "Media · Broadcast · Entertainment",
+    role: "Strategic Talent Advisor",
+    summary:
+      "Strategic talent advisory, industry connections, and development across CBS programming.",
+    size: "medium",
+    image: "/images/clients/cbs.webp",
+    imageWidth: 2400,
+    imageHeight: 870,
+    slug: "cbs",
+    body: [
+      "CBS is one of America's leading television networks, spanning entertainment, comedy, news, sports, and original programming.",
+      "Working alongside CBS Studios, Jessica Pilot served as a strategic talent advisor, setting key industry meetings, guiding development, and connecting top-tier talent with the network's leading entertainment and original programming initiatives.",
+    ],
+    imageFit: "contain",
+    scale: 0.8,
+    imageBg: "#ffffff",
+    client: "CBS",
+    sector: "brand",
+    website: "https://www.cbs.com/",
+  },
+  {
     title: "What a Mother!",
     category: "Film · Documentary · Comedy",
     role: "Talent Booking",

@@ -1,6 +1,8 @@
+
 import ProtectedVideo from "@/components/ProtectedVideo";
 import { videoUrl } from "@/videoUrl";
 
+// Videos displayed side by side in the homepage hero
 const heroVideos = [
   videoUrl("hero/reel-1-cropped.mp4"),
   videoUrl("hero/reel-2-cropped.mp4"),
@@ -10,9 +12,9 @@ const heroVideos = [
 export default function Hero() {
   return (
     <>
-      {/* HERO VIDEO SECTION */}
+      {/* Main homepage section with three background videos */}
       <section className="relative mt-[80px] max-[800px]:mt-[64px] h-[calc(100svh-130px)] max-[800px]:h-[calc(100svh-114px)] min-h-[500px] max-[800px]:min-h-[560px] bg-background overflow-hidden text-foreground">
-        {/* Full-width video columns */}
+        {/* Places the three videos in equal-width columns */}
         <div className="absolute inset-0 grid grid-cols-3 gap-[7px] max-[800px]:gap-[3px]">
           {heroVideos.map((src, i) => (
             <div key={i} className="relative min-w-0 h-full overflow-hidden">
@@ -28,12 +30,12 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Subtle overlay */}
+        {/* Darkens the videos slightly so the text is easier to read */}
         <div className="absolute inset-0 bg-background/30 pointer-events-none" />
 
-        {/* Hero content */}
+        {/* Positions the headline, description, and button over the videos */}
         <div className="relative z-10 h-full px-[5vw] max-[800px]:px-[6vw] pt-[5vw] max-[800px]:pt-[8vw] pb-[2vw] max-[800px]:pb-[5vw] flex flex-col justify-between">
-          {/* Main message */}
+          {/* Main headline and agency description */}
           <div className="max-w-[1050px] pt-[5vw] max-[800px]:pt-[12vw]">
             <h1 className="font-serif text-[clamp(60px,7.3vw,120px)] max-[800px]:text-[clamp(48px,14vw,68px)] leading-[0.95] tracking-[-0.035em]">
               <span className="block">People make</span>
@@ -48,19 +50,19 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* CTA */}
-<div className="flex justify-end">
-  <a
-    href="#work"
-    className="border border-foreground px-5 py-3 text-[9px] tracking-[0.15em] uppercase hover:bg-accent hover:border-accent transition-colors"
-  >
-    Explore our work
-  </a>
-</div>
+          {/* Button that takes visitors down to the work section */}
+          <div className="flex justify-end">
+            <a
+              href="#work"
+              className="border border-foreground px-5 py-3 text-[9px] tracking-[0.15em] uppercase hover:bg-accent hover:border-accent transition-colors"
+            >
+              Explore our work
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* BOTTOM BAND */}
+      {/* Bottom band with the agency's focus areas */}
       <div className="h-[50px] max-[800px]:h-[50px] bg-background px-[4.5vw] flex items-center">
         <p className="text-[9px] tracking-[0.17em] uppercase text-accent">
           Talent Partnerships · Culture · Impact
