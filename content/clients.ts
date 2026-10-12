@@ -6,12 +6,13 @@ export type Client = {
   logo?: string;
   featured?: boolean;
   scale?: number;
-mobileScale?: number;
+  mobileScale?: number;
   paid?: boolean;
   sector?: "nonprofit" | "brand";
   workSlug?: string;
 };
 
+// Client information used to display the logo wall
 export const clients: Client[] = [
   // --- Nonprofit & Foundations ---
   {
@@ -52,7 +53,7 @@ export const clients: Client[] = [
     logo: "/images/clients/emerge-125.webp",
     featured: true,
     scale: 1.75,
-      mobileScale: 1.4,
+    mobileScale: 1.4,
     sector: "nonprofit",
     workSlug: "emerge125",
   },
@@ -61,11 +62,9 @@ export const clients: Client[] = [
     featured: true,
     sector: "nonprofit",
     workSlug: "climate-podcast",
-        logo: "/images/clients/norcal-public.webp",
-        scale: 3.9,
-          mobileScale: 2.8,
-
-
+    logo: "/images/clients/norcal-public.webp",
+    scale: 3.9,
+    mobileScale: 2.8,
   },
 
   // --- Brands ---
@@ -86,8 +85,8 @@ export const clients: Client[] = [
     sector: "brand",
     workSlug: "los-angeles-clippers",
   },
- 
-        {
+
+  {
     name: "Paramount",
     sector: "brand",
     scale: 1.3,
@@ -117,20 +116,19 @@ export const clients: Client[] = [
     logo: "/images/clients/cnn.webp",
     workSlug: "national-comedy-center-cnn",
   },
-    {
+  {
     name: "Comedy Central",
     featured: true,
     sector: "brand",
-        logo: "/images/clients/comedy-central.svg",
-
+    logo: "/images/clients/comedy-central.svg",
   },
   {
     name: "FX",
     sector: "brand",
     featured: true,
-        logo: "/images/clients/fx.png",
+    logo: "/images/clients/fx.png",
   },
-    {
+  {
     name: "National Comedy Center",
     sector: "brand",
     scale: 1.7,
@@ -139,16 +137,14 @@ export const clients: Client[] = [
     workSlug: "national-comedy-center-cnn",
   },
 
-    {
+  {
     name: "American Public Media",
     logo: "/images/clients/american-public-media.webp",
     featured: true,
     scale: 1.3,
-      mobileScale: 1.1,
+    mobileScale: 1.1,
 
     sector: "brand",
     workSlug: "american-public-media",
-  }, 
-
-
+  },
 ];
