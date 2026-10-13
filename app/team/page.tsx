@@ -79,17 +79,17 @@ export default function TeamPage() {
       {/* Jessica's photo and bio */}
       <section className="px-[7vw] pb-[12vw] max-[800px]:px-[6vw] max-[800px]:pb-[18vw]">
         <div className="grid grid-cols-1 md:grid-cols-[0.75fr_1.25fr] gap-6 md:gap-8 md:items-stretch">
-          <div className="relative aspect-[4/5] md:aspect-auto w-full max-w-[480px] mx-auto md:mx-0">
-            <ProtectedImage
-              src="/images/team/jessica.png"
-              alt="Jessica Pilot"
-              width={1215}
-              height={1779}
-              sizes="(max-width: 800px) 100vw, 480px"
-              className="absolute inset-0 h-full w-full object-cover object-center"
-            />
-          </div>
-
+        <div className="relative aspect-[4/5] md:aspect-auto w-full max-w-[480px] mx-auto md:mx-0 md:mt-[4px] md:mb-[9px]">
+          <ProtectedImage
+            src="/images/team/jessica.png"
+            alt="Jessica Pilot"
+            width={1215}
+            height={1779}
+            sizes="(max-width: 800px) 100vw, 480px"
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ objectPosition: "50% 60%" }}
+          />
+        </div>
           <div>
             <p className="text-[9px] tracking-[0.17em] uppercase text-accent mb-5">
               Founder & CEO
