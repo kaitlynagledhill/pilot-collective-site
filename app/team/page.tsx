@@ -51,7 +51,7 @@ const jessicaBio = [
 // Displays the bio paragraphs with consistent spacing and text styling
 function BioText({ paragraphs }: { paragraphs: React.ReactNode[] }) {
   return (
-    <div className="space-y-5 text-[14px] leading-[1.8] text-foreground/80">
+    <div className="space-y-5 text-[15.5px] leading-[1.8] text-foreground/80">
       {paragraphs.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
@@ -70,7 +70,7 @@ export default function TeamPage() {
           the work.
         </h1>
 
-        <p className="mt-7 max-w-[620px] text-[clamp(18px,1.5vw,23px)] max-[800px]:text-[18px] leading-[1.5] tracking-[-0.01em] text-foreground/70">
+        <p className="mt-7 max-w-[700px] text-[clamp(18px,1.5vw,23px)] max-[800px]:text-[18px] leading-[1.5] tracking-[-0.01em] text-foreground/70">
           A creative strategist, brand builder, and producer, bringing people,
           ideas, and partnership opportunities together to move culture forward.
         </p>
@@ -78,14 +78,15 @@ export default function TeamPage() {
 
       {/* Jessica's photo and bio */}
       <section className="px-[7vw] pb-[12vw] max-[800px]:px-[6vw] max-[800px]:pb-[18vw]">
-        <div className="grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-[7vw] items-center">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-[0.75fr_1.25fr] gap-6 md:gap-8 md:items-stretch">
+          <div className="relative aspect-[4/5] md:aspect-auto w-full max-w-[480px] mx-auto md:mx-0">
             <ProtectedImage
               src="/images/team/jessica.png"
               alt="Jessica Pilot"
-              width={800}
-              height={1000}
-              className="w-full aspect-[4/5] object-cover"
+              width={1215}
+              height={1779}
+              sizes="(max-width: 800px) 100vw, 480px"
+              className="absolute inset-0 h-full w-full object-cover object-center"
             />
           </div>
 
