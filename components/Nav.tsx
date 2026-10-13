@@ -1,7 +1,9 @@
+
 "use client";
 
 import { useState } from "react";
 
+// Links used in both the desktop and mobile navigation
 const links = [
   { label: "Work", href: "/work" },
   { label: "About", href: "/team" },
@@ -10,21 +12,23 @@ const links = [
 ];
 
 export default function Nav() {
+  // Tracks whether the mobile menu is open
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
+      {/* Main header stays at the top of the page */}
       <nav className="fixed top-0 left-0 right-0 z-50 h-[80px] max-[800px]:h-[64px] bg-background flex justify-between items-center px-[4.5vw] text-foreground">
-        {/* Logo */}
+        {/* Logo links back to the homepage */}
         <a
           href="/"
           onClick={() => setMenuOpen(false)}
-          className="font-serif text-lg max-[800px]:text-base tracking-[-0.04em] border-b-2 border-accent pb-1"
+          className="font-serif text-xl max-[800px]:text-lg tracking-[-0.04em] border-b-2 border-accent pb-1"
         >
           PILOT COLLECTIVE
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Desktop navigation links, hidden on smaller screens */}
         <div className="flex gap-7 text-[9px] tracking-[0.15em] uppercase max-[800px]:hidden">
           {links.map((link) => (
             <a
@@ -37,7 +41,7 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Button that opens and closes the mobile menu */}
         <button
           type="button"
           onClick={() => setMenuOpen((open) => !open)}
@@ -49,7 +53,7 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Full-screen mobile menu, shown when menuOpen is true */}
       <div
         className={`fixed inset-0 z-40 bg-[#191817] text-[#faf8f3] transition-all duration-300 ease-out ${
           menuOpen
@@ -58,7 +62,7 @@ export default function Nav() {
         }`}
       >
         <div className="h-full px-[7vw] pt-[110px] pb-[8vw] flex flex-col justify-between">
-          {/* Navigation Links */}
+          {/* Mobile navigation links with larger text */}
           <nav>
             {links.map((link, index) => (
               <a
@@ -69,13 +73,14 @@ export default function Nav() {
                   index === 0 ? "border-t" : ""
                 }`}
               >
-<span className="font-serif text-[clamp(30px,8vw,46px)] leading-none tracking-[-0.035em] transition-colors group-hover:text-[#F15922]">                  {link.label}
+                <span className="font-serif text-[clamp(30px,8vw,46px)] leading-none tracking-[-0.035em] transition-colors group-hover:text-[#F15922]">
+                  {link.label}
                 </span>
               </a>
             ))}
           </nav>
 
-          {/* Small Footer Detail */}
+          {/* Small tagline at the bottom of the mobile menu */}
           <p className="font-sans text-[8px] tracking-[0.16em] uppercase text-white/40">
             Talent partnerships · Culture · Impact
           </p>
