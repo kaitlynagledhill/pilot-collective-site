@@ -29,8 +29,8 @@ export default function Nav() {
         </a>
 
         {/* Desktop navigation links, hidden on smaller screens */}
-        <div className="flex gap-7 text-[9px] tracking-[0.15em] uppercase max-[800px]:hidden">
-          {links.map((link) => (
+        <div className="flex gap-8 text-[10.5px] tracking-[0.14em] uppercase max-[800px]:hidden">
+            {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
