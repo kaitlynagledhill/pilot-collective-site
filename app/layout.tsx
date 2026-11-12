@@ -4,6 +4,8 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/next"
+
 // Fonts used throughout the site
 const fraunces = Fraunces({
   variable: "--font-display",
