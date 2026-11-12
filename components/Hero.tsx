@@ -44,10 +44,10 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="font-serif text-xl md:text-[28px] max-[800px]:text-lg leading-[1.3] max-w-[620px] max-[800px]:max-w-[330px] mt-6 max-[900px]:mt-5">
-              Pilot Collective is an agency that believes the most
-              powerful brand stories are told by people.
-            </p>
+          <p className="font-serif text-xl md:text-[28px] max-[800px]:text-[22px] leading-[1.3] max-w-[620px] max-[800px]:max-w-[360px] mt-6 max-[900px]:mt-5">
+            Pilot Collective is an agency that believes the most
+            powerful brand stories are told by people.
+          </p>
           </div>
 
           {/* Button that takes visitors down to the work section */}
